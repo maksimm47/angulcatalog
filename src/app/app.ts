@@ -1,12 +1,11 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-
+import { Component, inject} from '@angular/core';
+import { Card } from "./common-ui/card/card";
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [Card],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('catalog');
+  
 }

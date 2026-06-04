@@ -1,0 +1,58 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Будильник-убегайка",
+            "description": "...",
+            "price": 2499,
+            "currency": "RUB",
+            "inStock": true,
+            "imageUrl": "assets/images/clock-runner.png",
+            "categoryId": 1
+        },
+        {
+            "id": 2,
+            "name": "Зонт с Wi-Fi",
+            "description": "...",
+            "price": 4990,
+            "currency": "RUB",
+            "inStock": true,
+            "imageUrl": "assets/images/umbrella-wifi.png",
+            "categoryId": 2
+        },
+        {
+            "id": 3,
+            "name": "Беспроводной шнур",
+            "description": "...",
+            "price": 899,
+            "currency": "RUB",
+            "inStock": false,
+            "imageUrl": "assets/images/wireless-wire.png",
+            "categoryId": 1
+        },
+        {
+            "id": 4,
+            "name": "Носки с GPS",
+            "description": "...",
+            "price": 1500,
+            "currency": "RUB",
+            "inStock": true,
+            "imageUrl": "assets/images/socks-gps.png",
+            "categoryId": 3
+        }
+    ],
+    "categories": [
+        {
+            "id": 1,
+            "name": "Для дома"
+        },
+        {
+            "id": 2,
+            "name": "Гаджеты"
+        },
+        {
+            "id": 3,
+            "name": "Одежда"
+        }
+    ]
+}
