@@ -1,8 +1,8 @@
-import { Component, inject} from '@angular/core';
-import { Card } from "./common-ui/card/card";
+import { Component} from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 @Component({
   selector: 'app-root',
-  imports: [Card],
+  imports: [RouterOutlet],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

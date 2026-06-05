@@ -1,0 +1,13 @@
+.categories{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+.categories__text{
+    color: black;
+    text-decoration-color: #dadada;
+    font-size: 18px;
+}
