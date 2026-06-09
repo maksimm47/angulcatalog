@@ -1,0 +1,13 @@
+:host {
+    --card-bg: #4e4a4a;
+    --card-text: #e0e0e0;
+    --card-price: #ffffff;
+    --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    --card-hover-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+    --btn-bg: #2c2c2c;
+    --btn-hover-bg: #3a3a3a;
+    --btn-text: #cccccc;
+    --btn-border: #444444;
+    --radius: 8px;
+    --transition: 0.2s ease;
+}

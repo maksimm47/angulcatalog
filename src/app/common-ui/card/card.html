@@ -1,8 +1,10 @@
-<div class="card">
-    <img src="/media/img/car.jpg" alt="ferrari448" class="card__image">
-    <div class="card__bottom">
-        <div class="card__text">Ferrari 448</div>
-        <div class="card__price">13 000 000 ₽</div>
+@if (product){
+    <div class="card">
+        <img [src]="product.imageUrl" [alt]="product.name" class="card__image">
+        <div class="card__bottom">
+            <div class="card__text">{{ product.name }}</div>
+            <div class="card__price">{{ product.price }} {{product.currency}}</div>
+        </div>
+        <button class="btn">Перейти</button>
     </div>
-    <button class="btn">Перейти</button>
-</div>
+}

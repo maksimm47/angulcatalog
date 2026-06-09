@@ -1,13 +1,18 @@
-.cards-wrapper{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
+.cards-wrapper {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.2rem;
+    align-items: stretch;
+    padding-right: 10px;
+    padding-top: 10px;
 }
 
-.sidebar-wrapper{
+.sidebar-wrapper {
     width: 300px;
 }
 
-.catalog-wrapper{
+.catalog-wrapper {
     display: flex;
+    align-items: flex-start;
 }

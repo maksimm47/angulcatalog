@@ -5,9 +5,9 @@
             "name": "Будильник-убегайка",
             "description": "...",
             "price": 2499,
-            "currency": "RUB",
+            "currency": "₽",
             "inStock": true,
-            "imageUrl": "assets/images/clock-runner.png",
+            "imageUrl": "/media/img/clock.jpg",
             "categoryId": 1
         },
         {
@@ -15,9 +15,9 @@
             "name": "Зонт с Wi-Fi",
             "description": "...",
             "price": 4990,
-            "currency": "RUB",
+            "currency": "₽",
             "inStock": true,
-            "imageUrl": "assets/images/umbrella-wifi.png",
+            "imageUrl": "/media/img/umbrella.jpg",
             "categoryId": 2
         },
         {
@@ -25,9 +25,9 @@
             "name": "Беспроводной шнур",
             "description": "...",
             "price": 899,
-            "currency": "RUB",
+            "currency": "₽",
             "inStock": false,
-            "imageUrl": "assets/images/wireless-wire.png",
+            "imageUrl": "/media/img/wire.jpg",
             "categoryId": 1
         },
         {
@@ -35,9 +35,9 @@
             "name": "Носки с GPS",
             "description": "...",
             "price": 1500,
-            "currency": "RUB",
+            "currency": "₽",
             "inStock": true,
-            "imageUrl": "assets/images/socks-gps.png",
+            "imageUrl": "/media/img/socks.jpg",
             "categoryId": 3
         }
     ],
