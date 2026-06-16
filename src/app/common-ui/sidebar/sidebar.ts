@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Category } from '../../models/categories.model';
 
 @Component({
   selector: 'app-sidebar',
@@ -6,4 +7,7 @@ import { Component } from '@angular/core';
   templateUrl: './sidebar.html',
   styleUrl: './sidebar.css',
 })
-export class Sidebar {}
+export class Sidebar {
+  @Input() category!: Category[];
+
+}

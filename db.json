@@ -2,57 +2,171 @@
     "products": [
         {
             "id": 1,
-            "name": "Будильник-убегайка",
-            "description": "...",
-            "price": 2499,
+            "name": "Смартфон Samsung Galaxy S24 Ultra",
+            "description": "Флагманский смартфон с 6.8-дюймовым Dynamic AMOLED 2X-дисплеем, процессором Snapdragon 8 Gen 3, 12 ГБ ОЗУ и 256 ГБ встроенной памяти. Камера 200 МП + 50 МП + 12 МП + 10 МП, оптический зум 10x. Аккумулятор 5000 мА·ч с быстрой зарядкой 45 Вт. Пыле- и влагозащита IP68, стилус S Pen в комплекте.",
+            "price": 124990,
             "currency": "₽",
             "inStock": true,
-            "imageUrl": "/media/img/clock.jpg",
+            "imageUrl": "/media/img/s24ultra.jpg",
             "categoryId": 1
         },
         {
             "id": 2,
-            "name": "Зонт с Wi-Fi",
-            "description": "...",
-            "price": 4990,
+            "name": "Беспроводные наушники Sony WH-1000XM5",
+            "description": "Полноразмерные Bluetooth-наушники с активным шумоподавлением. 30 мм динамики, поддержка LDAC и Hi-Res Audio. Время работы до 30 часов, быстрая зарядка: 3 минуты на 3 часа. Мягкие амбушюры из пены с эффектом памяти. Чёрный цвет.",
+            "price": 34990,
             "currency": "₽",
             "inStock": true,
-            "imageUrl": "/media/img/umbrella.jpg",
+            "imageUrl": "/media/img/sonyxm5.jpg",
             "categoryId": 2
         },
         {
             "id": 3,
-            "name": "Беспроводной шнур",
-            "description": "...",
-            "price": 899,
+            "name": "Портативная колонка JBL Charge 5",
+            "description": "Влагозащищённая колонка с мощным звуком и глубокими басами. 20 часов работы, встроенный Powerbank для зарядки телефона. Bluetooth 5.1, возможность объединения в стереопару. Цвет: синий.",
+            "price": 14990,
             "currency": "₽",
-            "inStock": false,
-            "imageUrl": "/media/img/wire.jpg",
-            "categoryId": 1
+            "inStock": true,
+            "imageUrl": "/media/img/jblcharge5.jpg",
+            "categoryId": 2
         },
         {
             "id": 4,
-            "name": "Носки с GPS",
-            "description": "...",
-            "price": 1500,
+            "name": "Умные часы Apple Watch Series 9",
+            "description": "Модель с процессором S9, дисплеем Always-On Retina LTPO OLED. Измерение кислорода в крови, ЭКГ, датчик температуры. Защита от пыли IP6X и воды WR50. Размер 45 мм, алюминиевый корпус, спортивный ремешок.",
+            "price": 56990,
+            "currency": "₽",
+            "inStock": false,
+            "imageUrl": "/media/img/applewatch9.jpg",
+            "categoryId": 4
+        },
+        {
+            "id": 5,
+            "name": "Защитное стекло для iPhone 15 Pro",
+            "description": "Ударопрочное стекло 9H с олеофобным покрытием. Полное покрытие экрана, не влияет на чувствительность сенсора. Простая установка без пузырей.",
+            "price": 890,
             "currency": "₽",
             "inStock": true,
-            "imageUrl": "/media/img/socks.jpg",
+            "imageUrl": "/media/img/glass15pro.jpg",
+            "categoryId": 3
+        },
+        {
+            "id": 6,
+            "name": "Кабель USB-C / Lightning (2 метра)",
+            "description": "Оригинальный кабель Apple с разъёмами USB-C и Lightning. Поддержка быстрой зарядки Power Delivery. Длина 2 м, плетёная оплётка, не перекручивается.",
+            "price": 2490,
+            "currency": "₽",
+            "inStock": true,
+            "imageUrl": "/media/img/cable.jpg",
+            "categoryId": 3
+        },
+        {
+            "id": 7,
+            "name": "Ноутбук MacBook Air 15\" (M3)",
+            "description": "Тонкий и лёгкий ноутбук с 15.3-дюймовым Liquid Retina дисплеем, чипом Apple M3, 8 ГБ объединённой памяти, SSD 256 ГБ. Клавиатура Magic Keyboard, Touch ID. До 18 часов автономной работы. Цвет: «сияющая звезда».",
+            "price": 144990,
+            "currency": "₽",
+            "inStock": true,
+            "imageUrl": "/media/img/macbookair15.jpg",
+            "categoryId": 1
+        },
+        {
+            "id": 8,
+            "name": "Беспроводные наушники AirPods Pro (2-го поколения)",
+            "description": "Наушники с активным шумоподавлением и адаптивным режимом прозрачности. Чип H2, персонализированное пространственное аудио. Время работы до 6 часов, с кейсом до 30. Влагозащита IPX4.",
+            "price": 24990,
+            "currency": "₽",
+            "inStock": true,
+            "imageUrl": "/media/img/airpodspro2.jpg",
+            "categoryId": 2
+        },
+        {
+            "id": 9,
+            "name": "Игровая мышь Logitech G Pro X Superlight 2",
+            "description": "Беспроводная лёгкая мышь (60 г) для киберспорта. Сенсор HERO 2 с разрешением до 44 000 DPI, отслеживание на скорости до 500 IPS. Технология LIGHTSPEED, до 95 часов работы. Белый цвет.",
+            "price": 13990,
+            "currency": "₽",
+            "inStock": true,
+            "imageUrl": "/media/img/gpx2.jpg",
+            "categoryId": 3
+        },
+        {
+            "id": 10,
+            "name": "Монитор LG UltraFine 27UP850N 27\" 4K",
+            "description": "27-дюймовый IPS-монитор с разрешением 3840×2160, цветовой охват DCI-P3 95%. Поддержка HDR400, порты USB-C (96W Power Delivery), HDMI, DisplayPort. Подставка с регулировкой высоты и поворотом. Калибровка с завода.",
+            "price": 52990,
+            "currency": "₽",
+            "inStock": false,
+            "imageUrl": "/media/img/lg27up850n.jpg",
+            "categoryId": 1
+        },
+        {
+            "id": 11,
+            "name": "Фитнес-браслет Xiaomi Band 8",
+            "description": "Лёгкий фитнес-трекер с AMOLED-экраном 1.62\", пульсометром, SpO2, мониторингом сна и стресса. 150+ спортивных режимов, водонепроницаемость 5 АТМ. До 16 дней работы. Чёрный.",
+            "price": 3990,
+            "currency": "₽",
+            "inStock": true,
+            "imageUrl": "/media/img/miband8.jpg",
+            "categoryId": 4
+        },
+        {
+            "id": 12,
+            "name": "Внешний SSD Samsung T7 Shield 1 ТБ",
+            "description": "Портативный накопитель с защитой от воды и пыли IP65, скоростью чтения до 1050 МБ/с. Интерфейс USB 3.2 Gen2 (Type-C). Устойчив к падениям с 3 метров. Объём: 1 ТБ, цвет: чёрный.",
+            "price": 11990,
+            "currency": "₽",
+            "inStock": true,
+            "imageUrl": "/media/img/t7shield.jpg",
+            "categoryId": 3
+        },
+        {
+            "id": 13,
+            "name": "Электронная книга PocketBook 632 (Touch Lux 5)",
+            "description": "6-дюймовый E-Ink Carta экран с подсветкой и регулировкой цветовой температуры. 8 ГБ встроенной памяти, поддержка 18 форматов. Wi-Fi, аккумулятор на месяц чтения. Компактный корпус 161×108×8 мм, вес 155 г.",
+            "price": 10990,
+            "currency": "₽",
+            "inStock": true,
+            "imageUrl": "/media/img/pocketbook632.jpg",
+            "categoryId": 1
+        },
+        {
+            "id": 14,
+            "name": "Беспроводная колонка Marshall Emberton II",
+            "description": "Компактная стереоколонка с классическим рок-дизайном. Мощность 2×10 Вт, Bluetooth 5.1, защита IP67. До 30 часов работы. Управление с помощью джойстика.",
+            "price": 15990,
+            "currency": "₽",
+            "inStock": true,
+            "imageUrl": "/media/img/marshallemberton.jpeg",
+            "categoryId": 2
+        },
+        {
+            "id": 15,
+            "name": "Сетевой фильтр APC Essential SurgeArrest 5 розеток",
+            "description": "Сетевой фильтр с защитой от скачков напряжения до 918 Джоулей. 5 розеток с заземлением, длина кабеля 1.8 м. Автоматический предохранитель. Подходит для домашней и офисной техники.",
+            "price": 2590,
+            "currency": "₽",
+            "inStock": true,
+            "imageUrl": "/media/img/apc.jpg",
             "categoryId": 3
         }
     ],
     "categories": [
         {
             "id": 1,
-            "name": "Для дома"
+            "name": "Смартфоны и ноутбуки"
         },
         {
             "id": 2,
-            "name": "Гаджеты"
+            "name": "Аудио"
         },
         {
             "id": 3,
-            "name": "Одежда"
+            "name": "Аксессуары"
+        },
+        {
+            "id": 4,
+            "name": "Носимые устройства"
         }
     ]
 }

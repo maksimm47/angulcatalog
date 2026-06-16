@@ -5,19 +5,24 @@ import { Sidebar } from "../../common-ui/sidebar/sidebar";
 import { ProductService } from '../../data/products';
 import { Product } from '../../models/product.model';
 import { ChangeDetectorRef } from '@angular/core';
+import { ProductModal } from "../../common-ui/modals/product-modal/product-modal";
+import { CategoryService } from '../../data/categories';
+import { Category } from '../../models/categories.model';
 
 @Component({
   selector: 'app-catalog-page',
-  imports: [Card, RouterModule, Sidebar],
+  imports: [Card, RouterModule, Sidebar, ProductModal],
   templateUrl: './catalog-page.html',
   styleUrl: './catalog-page.css',
 })
 
 export class CatalogPage implements OnInit {
   products: Product[] = [];
+  Categories: Category[] = [];
 
   constructor(
     private productService: ProductService,
+    private categoryService: CategoryService,
     private cdr: ChangeDetectorRef
   ) {}
 
@@ -26,6 +31,21 @@ export class CatalogPage implements OnInit {
       this.products = data;
       this.cdr.detectChanges();  
     });
+    this.categoryService.getCategories().subscribe(data =>{
+      this.Categories = data;
+      this.cdr.detectChanges();
+    })
   }
 
+  isModalOpen: boolean = false;
+  selectedProduct: Product | null = null
+
+  openProductModal(product: Product) {
+    this.selectedProduct = product;
+    this.isModalOpen = true;
+  }
+
+  closeProductModal(){
+    this.isModalOpen = false;
+  }
 }

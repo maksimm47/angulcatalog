@@ -1,10 +1,14 @@
 <div class="catalog-wrapper">
     <div class="sidebar-wrapper">
-        <app-sidebar></app-sidebar>
+        <app-sidebar [category]="Categories"></app-sidebar>
     </div>
     <div class="cards-wrapper">
         @for (product of products; track product.id) {
-            <app-card [product]="product"></app-card>
+        <app-card [product]="product" (productButton)="openProductModal($event)"></app-card>
         }
     </div>
 </div>
+
+@if (isModalOpen && selectedProduct) {
+<app-product-modal [product]="selectedProduct" (close)="closeProductModal()"></app-product-modal>
+}

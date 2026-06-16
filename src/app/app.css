@@ -4,10 +4,18 @@
     --card-price: #ffffff;
     --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
     --card-hover-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+    --modal-overlay: rgba(64, 64, 64, 0.75);
+    --modal-bg: #1e1e1e;
+    --modal-text: #e0e0e0;
+    --modal-accent: #ffffff;
+    --modal-radius: 12px;
+    --modal-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
     --btn-bg: #2c2c2c;
     --btn-hover-bg: #3a3a3a;
     --btn-text: #cccccc;
     --btn-border: #444444;
+    --btn-close-hover: #ff5252;
     --radius: 8px;
     --transition: 0.2s ease;
 }
+

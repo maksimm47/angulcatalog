@@ -1,8 +1,9 @@
-<div class="wrapper">
-    <div class="categories">
-        <a href="#" class="categories__text">Автомобили</a>
-        <a href="#" class="categories__text">Техника</a>
-        <a href="#" class="categories__text">Продукты</a>
-        <a href="#" class="categories__text">Одежда</a>
+@if (category){
+    <div class="wrapper">
+        <div class="categories">
+            @for (category of category; track category.id){
+                <a href="#" class="categories__text">{{ category.name }}</a>
+            }
+        </div>
     </div>
-</div>
+}

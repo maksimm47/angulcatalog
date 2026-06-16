@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Product } from '../../models/product.model';
 
 @Component({
@@ -10,4 +10,9 @@ import { Product } from '../../models/product.model';
 })
 export class Card {
   @Input() product!: Product;
+  @Output() productButton = new EventEmitter<Product>();
+  
+  onProductButton() {
+    this.productButton.emit(this.product);
+  }
 }
