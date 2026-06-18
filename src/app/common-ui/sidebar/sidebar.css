@@ -1,4 +1,4 @@
-.categories{
+.categories {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6,8 +6,8 @@
     padding-top: 10px;
 }
 
-.categories__text{
-    color: black;
-    text-decoration-color: #dadada;
+.categories__text {
+    color: var(--text);
+    text-decoration: none;
     font-size: 18px;
 }
