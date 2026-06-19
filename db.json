@@ -168,5 +168,21 @@
             "id": 4,
             "name": "Носимые устройства"
         }
+    ],
+    "users": [
+        {
+            "id": 1,
+            "email": "test@nocturne.store",
+            "password": "123456",
+            "name": "Тест",
+            "role": "user"
+        },
+        {
+            "id": 2,
+            "email": "t@test.com",
+            "password": "111111",
+            "name": "Тест",
+            "role": "user"
+        }
     ]
 }

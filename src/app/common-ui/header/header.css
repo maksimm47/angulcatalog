@@ -97,3 +97,7 @@
 .btn svg {
     pointer-events: none;
 }
+
+.user-name {
+    color: var(--header-text);
+}

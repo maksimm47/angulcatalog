@@ -1,0 +1,8 @@
+<div class="wrapper">
+    <input type="email" [(ngModel)]="email"> email<br>
+    <br>
+    <input type="password" [(ngModel)]="password"> passwrd<br>
+    <br>
+    <p *ngIf="errorMessage" style="color: red">{{ errorMessage }}</p>
+    <button (click)="onClickLogin()">Войти</button>
+</div>
