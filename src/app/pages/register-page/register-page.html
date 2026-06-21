@@ -1,1 +1,6 @@
-<p>register-page works!</p>
+<div class="wrapper">
+    <input type="text" [(ngModel)]='name'> name<br><br>
+    <input type="email" [(ngModel)]='email'> email<br><br>
+    <input type="password"[(ngModel)]='password'> password<br><br>
+    <button (click)="onClickRegister()">Регистрация</button>
+</div>
