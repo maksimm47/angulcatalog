@@ -2,5 +2,8 @@
     <input type="text" [(ngModel)]='name'> name<br><br>
     <input type="email" [(ngModel)]='email'> email<br><br>
     <input type="password"[(ngModel)]='password'> password<br><br>
+    @if(errorMessage){
+        <p style="color: red">{{ errorMessage }}</p>
+    }
     <button (click)="onClickRegister()">Регистрация</button>
 </div>

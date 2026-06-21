@@ -3,6 +3,8 @@
     <br>
     <input type="password" [(ngModel)]="password"> passwrd<br>
     <br>
-    <p *ngIf="errorMessage" style="color: red">{{ errorMessage }}</p>
+    @if(errorMessage){
+        <p style="color: red">{{ errorMessage }}</p>
+    }
     <button (click)="onClickLogin()">Войти</button>
 </div>
