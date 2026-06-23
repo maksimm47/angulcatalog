@@ -1,9 +1,9 @@
 <div class="header">
     <div class="header__left">
-        <div class="logo-container">
+        <a class="logo-container" [routerLink]="['']">
             <img src="/media/svg/logo.svg" alt="logo" class="header__logo">
-            <span class="header__logo-text">Nocturne</span>
-        </div>
+            <span class="header__logo-text" >Nocturne</span>
+        </a>
         <div class="header__search">
             <input type="text" placeholder="Поиск товаров..." class="search__input">
             <button class="search__btn">
@@ -34,7 +34,7 @@
             </svg>
             <span>Избранное</span>
         </button>
-        <button class="btn btn--icon">
+        <button class="btn btn--icon" [routerLink]="['/cart']">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                 stroke-linecap="round" stroke-linejoin="round">
                 <circle cx="9" cy="21" r="1"></circle>

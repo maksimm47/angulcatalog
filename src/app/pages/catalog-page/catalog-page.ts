@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { Card } from "../../common-ui/card/card";
 import { RouterModule } from '@angular/router';
 import { Sidebar } from "../../common-ui/sidebar/sidebar";
-import { ProductService } from '../../data/products';
+import { ProductService } from '../../data/products.service';
 import { Product } from '../../models/product.model';
 import { ChangeDetectorRef } from '@angular/core';
 import { ProductModal } from "../../common-ui/modals/product-modal/product-modal";
-import { CategoryService } from '../../data/categories';
+import { CategoryService } from '../../data/categories.service';
 import { Category } from '../../models/categories.model';
 
 @Component({
