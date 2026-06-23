@@ -1,1 +1,31 @@
-<p>cart-page works!</p>
+<div class="cart-page">
+    <h1 class="cart-page__title">Корзина</h1>
+    @if((cartService.cartItems$ | async)?.length === 0){
+    <div class="cart-empty">
+        <p>Ваша корзина пока пуста</p>
+        <a [routerLink]="['']" class="cart-empty__link">Перейти в каталог</a>
+    </div>
+    }
+    @else {
+    <div class="cart-items">
+        @for (item of (cartService.cartItems$ | async)!; track item.productId) {
+        <app-cart-item [item]="item" (quantityChange)="onQuantityChange($event)"
+            (remove)="onRemove($event)"></app-cart-item>
+        }
+    </div>
+    }
+
+    <div class="cart-summary">
+        <div class="cart-summary__total">
+            <span>Итого:</span>
+            <span class="cart-summary__price">{{ (cartService.totalPrice$ | async) || 0 }} ₽</span>
+        </div>
+
+        <div class="cart-summary__actions">
+            <button class="cart-summary__clear" (click)="clearCart()">
+                Очистить корзину
+            </button>
+            <button class="cart-summary__checkout" (click)="checkout()">Оформить заказ</button>
+        </div>
+    </div>
+</div>

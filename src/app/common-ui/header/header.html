@@ -2,7 +2,7 @@
     <div class="header__left">
         <a class="logo-container" [routerLink]="['']">
             <img src="/media/svg/logo.svg" alt="logo" class="header__logo">
-            <span class="header__logo-text" >Nocturne</span>
+            <span class="header__logo-text">Nocturne</span>
         </a>
         <div class="header__search">
             <input type="text" placeholder="Поиск товаров..." class="search__input">
@@ -42,17 +42,17 @@
                 <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
             </svg>
             <span>Корзина</span>
+            {{ (cartService.cartItems$ | async)?.length || 0 }}
         </button>
+
         <div class="header__divider"></div>
 
-        <ng-container *ngIf="authService.currentUser$ | async as user; else loggedOut">
-            <span class="user-name">{{ user.name }}</span>
-            <button class="btn btn--outline" (click)="onLogout()">Выйти</button>
-        </ng-container>
-
-        <ng-template #loggedOut>
-            <button class="btn btn--outline" [routerLink]="['/login']">Войти</button>
-            <button class="btn btn--filled" [routerLink]="['/register']">Регистрация</button>
-        </ng-template>
+        @if (authService.currentUser$ | async; as user) {
+        <span class="user-name">{{ user.name }}</span>
+        <button class="btn btn--outline" (click)="onLogout()">Выйти</button>
+        } @else {
+        <button class="btn btn--outline" [routerLink]="['/login']">Войти</button>
+        <button class="btn btn--filled" [routerLink]="['/register']">Регистрация</button>
+        }
     </div>
 </div>

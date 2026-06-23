@@ -10,5 +10,5 @@
 </div>
 
 @if (isModalOpen && selectedProduct) {
-<app-product-modal [product]="selectedProduct" (close)="closeProductModal()"></app-product-modal>
+<app-product-modal [product]="selectedProduct" (close)="closeProductModal()" (addToCart)="onAddToCart($event)"></app-product-modal>
 }

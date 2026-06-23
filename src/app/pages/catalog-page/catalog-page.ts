@@ -8,6 +8,7 @@ import { ChangeDetectorRef } from '@angular/core';
 import { ProductModal } from "../../common-ui/modals/product-modal/product-modal";
 import { CategoryService } from '../../data/categories.service';
 import { Category } from '../../models/categories.model';
+import { CartService } from '../../data/cart.service';
 
 @Component({
   selector: 'app-catalog-page',
@@ -23,6 +24,7 @@ export class CatalogPage implements OnInit {
   constructor(
     private productService: ProductService,
     private categoryService: CategoryService,
+    private cartService: CartService,
     private cdr: ChangeDetectorRef
   ) {}
 
@@ -47,5 +49,9 @@ export class CatalogPage implements OnInit {
 
   closeProductModal(){
     this.isModalOpen = false;
+  }
+
+  onAddToCart(product: Product){
+    this.cartService.addToCart(product)
   }
 }

@@ -26,5 +26,14 @@
     --btn-close-hover: #ff5252;
     --radius: 8px;
     --transition: 0.2s ease;
+    --cart-card-bg: #1e1e1e;
+    --cart-card-radius: 8px;
+    --cart-card-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    --cart-text-primary: #f0f0f0;
+    --cart-text-secondary: #aaa;
+    --cart-btn-text: #ccc;
+    --cart-danger: #ff5252;
+    --cart-page-bg: #121212;
+    --cart-btn-hover: #3a3a3a;
+    --cart-accent: #4a4a4a;
 }
-

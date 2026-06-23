@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RouterLink } from "@angular/router";
 import { CommonModule } from '@angular/common';
 import { AuthService } from '../../auth/auth';
+import { CartService } from '../../data/cart.service';
 
 @Component({
   selector: 'app-header',
@@ -10,7 +11,10 @@ import { AuthService } from '../../auth/auth';
   styleUrl: './header.css',
 })
 export class Header {
-  constructor(public authService: AuthService) {}
+  constructor(
+    public authService: AuthService,
+    public cartService: CartService
+  ) {}
 
   onLogout(){
     this.authService.logout()

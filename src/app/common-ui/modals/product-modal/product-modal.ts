@@ -10,8 +10,13 @@ import { Product } from '../../../models/product.model';
 export class ProductModal {
   @Input() product!: Product;
   @Output() close = new EventEmitter<void>()
+  @Output() addToCart = new EventEmitter<Product>()
 
   onCloseButton(){
     this.close.emit()
+  }
+
+  onAddToCart(){
+    this.addToCart.emit(this.product)
   }
 }
