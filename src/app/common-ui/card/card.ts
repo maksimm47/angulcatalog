@@ -11,8 +11,13 @@ import { Product } from '../../models/product.model';
 export class Card {
   @Input() product!: Product;
   @Output() productButton = new EventEmitter<Product>();
+  @Output() cartButton = new EventEmitter<Product>();
   
   onProductButton() {
     this.productButton.emit(this.product);
+  }
+
+  onCartButton() {
+    this.cartButton.emit(this.product);
   }
 }

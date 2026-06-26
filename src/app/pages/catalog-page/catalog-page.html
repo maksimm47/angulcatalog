@@ -4,7 +4,7 @@
     </div>
     <div class="cards-wrapper">
         @for (product of products; track product.id) {
-        <app-card [product]="product" (productButton)="openProductModal($event)"></app-card>
+        <app-card [product]="product" (productButton)="openProductModal($event)" (cartButton)="onAddToCart($event)"></app-card>
         }
     </div>
 </div>
