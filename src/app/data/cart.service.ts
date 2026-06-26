@@ -73,7 +73,7 @@ export class CartService {
       this.saveCart(items)
     }
   }
-
+  
   clearCart(): void {
     localStorage.removeItem('cart');
     this.cartSubject.next([]);

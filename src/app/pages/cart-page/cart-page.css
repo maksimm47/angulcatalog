@@ -97,3 +97,35 @@
     border-color: #ff5252;
     color: #fff;
 }
+
+.cart-page__header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-return {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    height: 36px;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #cccccc;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+    text-decoration: none;
+}
+.cart-return__text{
+    transform: translateY(1px);
+}
+.cart-return svg {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+}
+
+.cart-return:hover{
+    color: #ffffff;
+}
