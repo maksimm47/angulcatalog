@@ -3,6 +3,7 @@ import { RouterLink } from "@angular/router";
 import { CommonModule } from '@angular/common';
 import { AuthService } from '../../auth/auth';
 import { CartService } from '../../data/cart.service';
+import { FavoritesService } from '../../data/favorites.service';
 
 @Component({
   selector: 'app-header',
@@ -13,7 +14,8 @@ import { CartService } from '../../data/cart.service';
 export class Header {
   constructor(
     public authService: AuthService,
-    public cartService: CartService
+    public cartService: CartService,
+    public favoritesService: FavoritesService
   ) {}
 
   onLogout(){

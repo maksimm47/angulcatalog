@@ -31,23 +31,21 @@ export class CartService {
     map(items => items.reduce((sum, item) => sum + item.price * item.quantity, 0))
   );
 
-  addToCart(product: Product, quantity: number = 1) {
+  addToCart(item: { id: number; name: string; price: number; imageUrl?: string }, quantity: number = 1): void {
     const items = this.cartItems;
-    const existing = items.find(item => item.productId === product.id);
+    const existing = items.find(i => i.productId === item.id);
     if (existing) {
-      existing.quantity += 1
+      existing.quantity += quantity;
+    } else {
+      items.push({
+        productId: item.id,
+        name: item.name,
+        price: item.price,
+        imageUrl: item.imageUrl || '',
+        quantity: quantity,
+      });
     }
-    else {
-      const newItem: CartItem = {
-        productId: product.id,
-        name: product.name,
-        price: product.price,
-        imageUrl: product.imageUrl || '',
-        quantity: quantity
-      };
-      items.push(newItem)
-    }
-    this.saveCart(items)
+    this.saveCart(items);
   }
 
   removeFromCart(productId: number) {
@@ -73,7 +71,7 @@ export class CartService {
       this.saveCart(items)
     }
   }
-  
+
   clearCart(): void {
     localStorage.removeItem('cart');
     this.cartSubject.next([]);

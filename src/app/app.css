@@ -36,4 +36,10 @@
     --cart-page-bg: #121212;
     --cart-btn-hover: #3a3a3a;
     --cart-accent: #4a4a4a;
+    --fav-card-bg: #1e1e1e; 
+    --fav-card-radius: 8px;
+    --fav-text-primary: #f0f0f0; 
+    --fav-text-secondary: #aaa;
+    --fav-btn-text: #ccc;
+    --fav-danger: #ff5252;
 }

@@ -1,0 +1,18 @@
+<div class="favorite-item">
+    <img [src]="item.imageUrl" [alt]="item.name" class="favorite-item__image">
+    <div class="favorite-item__info">
+        <h3 class="favorite-item__name">{{ item.name }}</h3>
+        <span class="favorite-item__price">{{ item.price }} ₽</span>
+    </div>
+    <button class="favorite-item__cart" (click)="onAddToCart()">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+        </svg>
+    </button>
+    <button class="favorite-item__remove" (click)="onRemove()">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 6h18M8 6V4h8v2M19 6l-1 14H6L5 6M10 11v6M14 11v6"/>
+        </svg>
+    </button>
+</div>
